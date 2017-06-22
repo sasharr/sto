@@ -42,8 +42,12 @@ text-align: center;
   transform: rotate(90deg);
   position: fixed;
   top:50%;
-  right: -5%;
+  right: -3%;
   z-index: 5;
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .popup-form {
@@ -52,16 +56,86 @@ text-align: center;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top:20%;
-  z-index: 4;
+  padding-top:15%;
+  z-index: 9;
   background: url("../img/form-bg.png");
   background-size: cover;
   display: none;
 }
 
-.online {
+#pop-btn {
+  width: 30%;
+  float: right;
+  background: #363D4E;
+  color: #FFFFFF;
+  &:hover {
+   opacity: 0.7;
+  }
+}
+
+.hello-form {
   min-width: 200px;
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px 20px;
+  background: #f7584c;
 }
 
+.modal_close {
+  float: right;
+  background: #363D4E;
+  border: none;
+  border-radius: 50%;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  width: 42px;
+  height: 42px;
+  transition: transform 600ms;
+}
+
+.modal_close:hover {
+  background: #3E465A;
+  transform: rotate(360deg) scale(1.10);
+  transition: transform 600ms;
+}
+
+button.modal_close span, span:before, span:after {
+  background: #FFFFFF;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 2px;
+  width: 20px;
+}
+
+button.modal_close span:first-child {
+  background: none;
+  margin: auto;
+}
+
+button.modal_close span:before {
+  transform: rotate(45deg);
+}
+
+button.modal_close span:after {
+  transform: translateY(-2px) rotate(-45deg);
+  top: 2px;
+}
+
+.thankyou {
+  display: none;
+}
+
+.thanyou-text {
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+.error {
+outline: 3px solid #3E465A  }

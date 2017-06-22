@@ -102,7 +102,7 @@
     transition: all 0.4s ease;
     &:nth-child(1){
       margin-top: 10px;
-      z-index: 9;
+      z-index: 4;
     }
     &:nth-child(2){
       margin-top: 25px;
@@ -170,7 +170,7 @@
     overflow: visible;
   }
   span:nth-child(1), span:nth-child(3){
-    z-index: 100;
+    z-index: 3;
     transform: rotate(45deg);
   }
   span:nth-child(1){

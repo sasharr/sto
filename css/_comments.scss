@@ -63,7 +63,26 @@ textarea:focus {
   opacity: .6;
 }
 
-input[type=submit] {
+.comments-box {
+  width: 90%;
+  max-height: 200px;
+  overflow-y: scroll;
+  background: #ecf0f1;
+  margin: 2% auto;
+  padding: 1%
+}
+
+.yourcomments {
+  text-align: center;
+  text-transform: uppercase;
+  color: #7b7b7b;
+  font-family: "Comfortaa",sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+#trigger {
   margin-left: 40%;
   width: 50%;
   height: 3rem;
