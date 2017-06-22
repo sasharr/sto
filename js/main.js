@@ -3,10 +3,10 @@ $(".popup").on("click touch", function() {
    $('.popup-form').css("display", "block")
 });
 
-$("#pop-btn").on("click touch", function() {// zamena!!! ajax done!!!
-    $('.thankyou').css("display", "block");
-    $('.online').hide()
-});
+// $("#pop-btn").on("click touch", function() {// zamena!!! ajax done!!!
+//     $('.thankyou').css("display", "block");
+//     $('.online').hide()
+// });
 
 // When the user clicks on button close, close it
     $('.modal_close').on("click touch", function() {
@@ -172,7 +172,14 @@ $(document).ready(function () {
     });
 
 
-
+$('.slider-comments').slick({
+    dots: false,
+    arrows: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
 });
-
+});
 

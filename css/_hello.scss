@@ -42,7 +42,7 @@ text-align: center;
   transform: rotate(90deg);
   position: fixed;
   top:50%;
-  right: -3%;
+  right: -6%;
   z-index: 5;
   opacity: 0.8;
   &:hover {
@@ -78,7 +78,8 @@ text-align: center;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px 20px;
-  background: #f7584c;
+  background: rgba(0, 186, 198, 0.76);
+  border: 8px solid #363D4E;
 }
 
 .modal_close {
@@ -138,4 +139,22 @@ button.modal_close span:after {
 }
 
 .error {
-outline: 3px solid #3E465A  }
+outline: 3px solid #f7584c  }
+
+@media screen and (min-width: 2100px) {
+.popup {
+  right: -3%;
+}
+}
+
+@media screen and (max-width: 527px) {
+  .popup {
+    right: -7%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .popup {
+    right: -10%;
+  }
+}
