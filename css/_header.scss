@@ -2,23 +2,10 @@
   padding: $padding;
 }
 
-#menu-fixed {
+.menu-fixed {
   width: 100%;
-  //position: fixed;
-  z-index: 7;
   background: #323a45;
   @include padding(10px 30px);
-}
-
-
-#menu-fixed.active {
-  background: #81868e;
-  transition: 3s;
-  opacity: 0.5;
-  &:hover {
-    background: #323a45;
-    opacity: 1;
-  }
 }
 
 .headlist {
@@ -36,10 +23,8 @@
     font-weight: 400;
     line-height: 3.4;
     text-align: center;
-    padding: 0 5%;
     transition: 1s;
     &:hover {
-      padding: 0;
       font-size: 18px;
       line-height: 2.4;
       color: #00bac6;
@@ -47,6 +32,7 @@
     }
   }
 }
+
 .call-us {
   padding-top: 5px;
   float: right;
@@ -74,11 +60,8 @@
 }
 
 #headsvg {
-  //width: 200px;
-  //height: 80px;
   fill: #00bac6;
 }
-
 
 .open{
   display: none;
@@ -112,6 +95,7 @@
     }
   }
 }
+
 .sub-menu{
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   height: 0;
@@ -191,9 +175,6 @@
     margin-right: 200px;
   }
 }
-
-
-
 
 @media screen and (max-width: 1199px) {
 .headlist {

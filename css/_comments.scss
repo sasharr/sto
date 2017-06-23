@@ -15,10 +15,7 @@
   }
 }
 
-.col-left {
-  text-align: center;
-}
-
+.col-left,
 .col-right {
   text-align: center;
 }
@@ -78,12 +75,12 @@ textarea:focus {
 }
 
 .yourcomments {
-  text-align: center;
+  text-align: justify;
   color: #7b7b7b;
   font-family: "Comfortaa",sans-serif;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #trigger {
@@ -92,7 +89,6 @@ textarea:focus {
   height: 3rem;
   background: #f7584c;
   color: #FFFFFF;
-
 }
 
 .window {
@@ -101,6 +97,7 @@ textarea:focus {
   z-index:9000;
   display:none;
 }
+
 .modal-svg {
   width: 100px;
   height: 100px;

@@ -1,7 +1,7 @@
 .bg-hello {
   background: url("../img/bg-hello.jpg");
   background-size: cover;
-  height: 700px;
+  padding: 20% 1%;
 }
 
 .hello {
@@ -14,10 +14,9 @@ text-align: center;
     line-height: 48px;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 15%;
   }
   &__text {
-    width: 50%;
+    width: 60%;
     color: white;
     font-family: "Comfortaa", sans-serif;
     font-size: 20px;
@@ -51,6 +50,7 @@ text-align: center;
 }
 
 .popup-form {
+  text-align: right;
   position: fixed;
   top: 0;
   left: 0;
@@ -63,9 +63,21 @@ text-align: center;
   display: none;
 }
 
+.online {
+  width: 96%;
+  padding: 0 10px;
+}
+
+.online > input {
+  width: 100%;
+}
+
+.online > textarea {
+  width: 100%;
+}
+
 #pop-btn {
   width: 30%;
-  float: right;
   background: #363D4E;
   color: #FFFFFF;
   &:hover {
@@ -83,7 +95,6 @@ text-align: center;
 }
 
 .modal_close {
-  float: right;
   background: #363D4E;
   border: none;
   border-radius: 50%;
@@ -128,7 +139,7 @@ button.modal_close span:after {
   display: none;
 }
 
-.thanyou-text {
+.thankyou-text {
   color: white;
   font-family: "Comfortaa", sans-serif;
   font-size: 20px;
@@ -141,19 +152,25 @@ button.modal_close span:after {
 .error {
 outline: 3px solid #f7584c  }
 
-@media screen and (min-width: 2100px) {
+@media screen and (min-width: 1450px) {
 .popup {
   right: -3%;
 }
 }
 
-@media screen and (max-width: 527px) {
+@media screen and (max-width: 1024px) {
   .popup {
-    right: -7%;
+    right: -3%;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 768px) {
+  .popup {
+    right: -6%;
+  }
+}
+
+@media screen and (max-width: 414px) {
   .popup {
     right: -10%;
   }
