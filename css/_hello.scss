@@ -50,7 +50,7 @@ text-align: center;
 }
 
 .popup-form {
-  text-align: right;
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,6 +104,7 @@ text-align: center;
   width: 42px;
   height: 42px;
   transition: transform 600ms;
+  margin-left: 90%;
 }
 
 .modal_close:hover {
@@ -160,18 +161,18 @@ outline: 3px solid #f7584c  }
 
 @media screen and (max-width: 1024px) {
   .popup {
-    right: -3%;
+    right: -7%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .popup {
-    right: -6%;
+    right: -9%;
   }
 }
 
 @media screen and (max-width: 414px) {
   .popup {
-    right: -10%;
+    right: -17%;
   }
 }
