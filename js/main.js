@@ -1,19 +1,5 @@
 
 $(window).on('load', function () {
-    // $("main").on("click touch", function () {
-    //     $('.open').removeClass('oppenned');
-    // });
-    // $(document).delegate('.open', 'click touch', function (event) {
-    //     $(this).addClass('oppenned');
-    //     event.stopPropagation();
-    // });
-    // $(document).delegate('body', 'click touch', function (event) {
-    //     $('.open').removeClass('oppenned');
-    // });
-    // $(document).delegate('.cls', 'click touch', function (event) {
-    //     $('.open').removeClass('oppenned');
-    //     event.stopPropagation();
-    // });
 
     $(".open").on("click touch", function() {
         $(this).addClass('oppenned')
