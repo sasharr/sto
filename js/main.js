@@ -51,60 +51,54 @@ $(window).on('load', function () {
     }
 
     $("#orderName").keyup(function () { //keyup change?
-        var name = $("#orderName").val();
-        if (name.length > 2 && name.length < 10) {
+        var oname = $("#orderName").val();
+        if (oname.length > 2 && oname.length < 10) {
             $(this).removeClass("error");
         }
     });
 
     $("#orderPhone").keyup(function () { //keyup change?
-        var phone = $("#orderPhone").val();
-        if (phone.length > 6 && phone.length < 15) {
+        var ophone = $("#orderPhone").val();
+        if (ophone.length > 6 && ophone.length < 15) {
             $(this).removeClass("error");
         }
     });
 
     $("#orderMessage").keyup(function () { //keyup change?
-        var message = $("#orderMessage").val();
-        if (message.length > 6 && message.length < 100) {
+        var omessage = $("#orderMessage").val();
+        if (omessage.length > 6 && omessage.length < 100) {
             $(this).removeClass("error");
         }
     });
 
     $("#commentsName").keyup(function () { //keyup change?
-        var name = $("#commentsName").val();
-        if (name.length > 2 && name.length < 10) {
+        var cname = $("#commentsName").val();
+        if (cname.length > 2 && cname.length < 10) {
             $(this).removeClass("error");
         }
     });
 
     $("#commentMessage").keyup(function () { //keyup change?
-        var name = $("#commentMessage").val();
-        if (name.length > 2 && name.length < 100) {
+        var cmessage = $("#commentMessage").val();
+        if (cmessage.length > 2 && cmessage.length < 100) {
             $(this).removeClass("error");
         }
     });
 //
 
     $("#pop-btn").on("click touch", function () {
-        var name = $("#orderName").val();
-        if (name.length < 2 || name.length > 10){
+        var oname = $("#orderName").val();
+        if (oname.length < 2 || oname.length > 10){
             validateError($("#orderName"));
             return
-        }else {  // zamena!!! ajax done!!!
-            $('.thankyou').css("display", "block");
-            $('.online').hide()
         }
-        var phone = $("#orderPhone").val();
-        if (phone.length < 6 || phone.length > 15){
+        var ophone = $("#orderPhone").val();
+        if (ophone.length < 6 || ophone.length > 15){
             validateError($("#orderPhone"));
             return
-        }else {  // zamena!!! ajax done!!!
-            $('.thankyou').css("display", "block");
-            $('.online').hide()
         }
-        var message = $("#orderMessage").val();
-        if (message.length < 6 || message.length > 100){
+        var omessage = $("#orderMessage").val();
+        if (omessage.length < 6 || omessage.length > 100){
             validateError($("#orderMessage"));
             return
         }else {  // zamena!!! ajax done!!!
@@ -112,9 +106,9 @@ $(window).on('load', function () {
             $('.online').hide()
         }
         var request = {
-            name: name,
-            phone: phone,
-            message: message
+            name: oname,
+            phone: ophone,
+            message: omessage
         };
 
         $.ajax({
@@ -130,22 +124,21 @@ $(window).on('load', function () {
 // When the user clicks anywhere outside of the modal, close it
     
     $("#trigger").on("click touch", function () {
-        var name = $("#commentsName").val();
-        if (name.length < 2 || name.length > 10){
+        var cname = $("#commentsName").val();
+        if (cname.length < 2 || cname.length > 10){
             validateError($("#commentsName"));
             return
-        }else  { $('.window').fadeIn(2000);
-            $('#form-container').hide()}
+        }
 
-        var message = $("#commentMessage").val();
-        if (message.length < 6 || message.length > 100){
+        var cmessage = $("#commentMessage").val();
+        if (cmessage.length < 6 || cmessage.length > 100){
             validateError($("#commentMessage"));
             return
         }else  { $('.window').fadeIn(2000);
             $('#form-container').hide()}
         var request = {
-            name: name,
-            message: message
+            name: cname,
+            message: cmessage
         };
 
         $.ajax({
