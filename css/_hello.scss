@@ -14,6 +14,7 @@ text-align: center;
     line-height: 48px;
     text-transform: uppercase;
     margin: 0 auto;
+    padding: 0 5px;
   }
   &__text {
     width: 60%;
@@ -61,7 +62,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   padding-top:15%;
-  z-index: 9;
+  z-index: 105;
   background: url("../img/form-bg.png");
   background-size: cover;
   display: none;
@@ -181,10 +182,17 @@ outline: 3px solid #f7584c  }
   }
 }
 
+@media only screen and (max-device-width : 800px) and (orientation : landscape) {
+  .popup-form {
+    padding-top: 5px;
+  }
+}
+
 @media screen and (max-width: 668px) {
   .popup {
     left: 76%;
   }
+
 }
 
 @media screen and (max-width: 415px) {

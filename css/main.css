@@ -201,7 +201,8 @@ main {
     font-weight: 700;
     line-height: 48px;
     text-transform: uppercase;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 5px; }
   .hello__text {
     width: 60%;
     color: white;
@@ -242,7 +243,7 @@ main {
   width: 100%;
   height: 100%;
   padding-top: 15%;
-  z-index: 9;
+  z-index: 105;
   background: url("../img/form-bg.png");
   background-size: cover;
   display: none; }
@@ -335,6 +336,9 @@ button.modal_close span:after {
 @media screen and (max-width: 768px) {
   .popup {
     left: 79%; } }
+@media only screen and (max-device-width: 800px) and (orientation: landscape) {
+  .popup-form {
+    padding-top: 5px; } }
 @media screen and (max-width: 668px) {
   .popup {
     left: 76%; } }
@@ -531,6 +535,7 @@ textarea:focus {
   margin: 0 auto; }
 
 .yourcomments {
+  line-height: 20px;
   margin: 8px 0 0; }
 
 #trigger {
