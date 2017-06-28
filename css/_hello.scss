@@ -181,10 +181,6 @@ outline: 3px solid #f7584c  }
   .popup {
     left: 79%;
   }
-  .modal_close:hover {
-    transform: scale(1);
-    transition: transform 600ms;
-  }
 }
 
 @media only screen and (max-device-width : 800px) and (orientation : landscape) {
@@ -203,9 +199,6 @@ outline: 3px solid #f7584c  }
 @media screen and (max-width: 415px) {
   .popup {
     left: 65%;
-  }
-  .popup-form {
-    width: 97%;
   }
 }
 
