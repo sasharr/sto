@@ -1,15 +1,17 @@
 function initMap() {
+
     var latlng1 = new google.maps.LatLng(46.479337, 30.722654);
     var map = new google.maps.Map(document.getElementById('map'), {
         center: latlng1,
         zoom: 14,
         scrollwheel: false,
         styles: [
+
             {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#f5f5f5"
+                        "color": "#bdbdbd"
                     }
                 ]
             },
@@ -25,7 +27,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#616161"
+                        "color": "#9b99ae"
                     }
                 ]
             },
@@ -33,7 +35,7 @@ function initMap() {
                 "elementType": "labels.text.stroke",
                 "stylers": [
                     {
-                        "color": "#f5f5f5"
+                        "color": "white"
                     }
                 ]
             },
@@ -51,7 +53,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#eeeeee"
+                        "color": "#b4b2b3"
                     }
                 ]
             },
@@ -60,7 +62,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#757575"
+                        "color": "#9b99ae"
                     }
                 ]
             },
@@ -69,7 +71,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#e5e5e5"
+                        "color": "#b4b2b3"
                     }
                 ]
             },
@@ -78,7 +80,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#9e9e9e"
+                        "color": "#b4b2b3"
                     }
                 ]
             },
@@ -87,7 +89,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#ffffff"
+                        "color": "#9b99ae"
                     }
                 ]
             },
@@ -96,7 +98,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#757575"
+                        "color": "#b4b2b3"
                     }
                 ]
             },
@@ -105,7 +107,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#dadada"
+                        "color": "white"
                     }
                 ]
             },
@@ -114,7 +116,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#616161"
+                        "color": "white"
                     }
                 ]
             },
@@ -123,7 +125,7 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#9e9e9e"
+                        "color": "#9b99ae"
                     }
                 ]
             },
@@ -132,7 +134,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#e5e5e5"
+                        "visibility": "off"
                     }
                 ]
             },
@@ -150,7 +152,7 @@ function initMap() {
                 "elementType": "geometry",
                 "stylers": [
                     {
-                        "color": "#c9c9c9"
+                        "color": "#97a7e7"
                     }
                 ]
             },
@@ -159,20 +161,30 @@ function initMap() {
                 "elementType": "labels.text.fill",
                 "stylers": [
                     {
-                        "color": "#9e9e9e"
+                        "color": "#97a7e7"
                     }
                 ]
             }
         ]
     });
+
+
+
     var myMarker1 = new google.maps.Marker({
         position: latlng1,
         map: map,
-        title: "Beetroot",
+        title: "Beet",
         draggable: false,
         animation: google.maps.Animation.DROP
     });
+
+    google.maps.event.addDomListener(window, 'load', initMap);
+
+    google.maps.event.addDomListener(window, 'resize', function() {
+        map.setCenter(latlng1);
+    })
 }
+
 
 
 

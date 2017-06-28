@@ -158,6 +158,7 @@ $(document).ready(function () {
 
     $('.sliderparent').slick({
         dots: true,
+        arrows:false,
         infinite: false,
         speed: 300,
         slidesToShow: 3,
@@ -169,12 +170,14 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
+                    arrows:false,
                     dots: true
                 }
             },
             {
                 breakpoint: 900,
                 settings: {
+                    arrows:false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
@@ -182,6 +185,7 @@ $(document).ready(function () {
             {
                 breakpoint: 480,
                 settings: {
+                    arrows:false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
