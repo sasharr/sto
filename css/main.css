@@ -274,6 +274,7 @@ main {
   border: 8px solid #363D4E; }
 
 .modal_close {
+  text-align: center;
   background: #363D4E;
   border: none;
   border-radius: 50%;
