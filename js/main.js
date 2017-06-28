@@ -33,11 +33,6 @@ $(window).on('load', function () {
         $('.popup-form').css("display", "block")
     });
 
-$("#pop-btn").on("click touch", function() {// zamena!!! ajax done!!!
-    $('.thankyou').css("display", "block");
-    $('.online').hide()
-});
-
 // When the user clicks on button close, close it
     $('.modal_close').on("click touch", function() {
         $('.popup-form').hide();
@@ -96,16 +91,25 @@ $("#pop-btn").on("click touch", function() {// zamena!!! ajax done!!!
         if (name.length < 2 || name.length > 10){
             validateError($("#orderName"));
             return
+        }else {  // zamena!!! ajax done!!!
+            $('.thankyou').css("display", "block");
+            $('.online').hide()
         }
         var phone = $("#orderPhone").val();
         if (phone.length < 6 || phone.length > 15){
             validateError($("#orderPhone"));
             return
+        }else {  // zamena!!! ajax done!!!
+            $('.thankyou').css("display", "block");
+            $('.online').hide()
         }
         var message = $("#orderMessage").val();
         if (message.length < 6 || message.length > 100){
             validateError($("#orderMessage"));
             return
+        }else {  // zamena!!! ajax done!!!
+            $('.thankyou').css("display", "block");
+            $('.online').hide()
         }
         var request = {
             name: name,
@@ -120,25 +124,25 @@ $("#pop-btn").on("click touch", function() {// zamena!!! ajax done!!!
             data: request
         });
     });
+
+
 //comment-form
 // When the user clicks anywhere outside of the modal, close it
-    $("#trigger").on("click touch", function() {// zamena!!! ajax done!!!
-        $('.window').fadeIn(2000);
-        $('#form-container').hide()
-    });
-
+    
     $("#trigger").on("click touch", function () {
         var name = $("#commentsName").val();
         if (name.length < 2 || name.length > 10){
             validateError($("#commentsName"));
             return
-        }
+        }else  { $('.window').fadeIn(2000);
+            $('#form-container').hide()}
 
         var message = $("#commentMessage").val();
         if (message.length < 6 || message.length > 100){
             validateError($("#commentMessage"));
             return
-        }
+        }else  { $('.window').fadeIn(2000);
+            $('#form-container').hide()}
         var request = {
             name: name,
             message: message
