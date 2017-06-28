@@ -18,10 +18,11 @@ $(window).on('load', function () {
     $(".open").on("click touch", function() {
         $(this).addClass('oppenned')
     });
-    $("body").on("click touch", function(event) {
+    $("body").on("click touchstart", function() {
         if ($(event.target).closest(".open").length)return;
 
-        $('.open').removeClass('oppenned');
+       else($('.open').removeClass('oppenned'));
+
     });
 
 
