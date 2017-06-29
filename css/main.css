@@ -188,7 +188,7 @@ main {
   .open {
     display: block; } }
 .bg-hello {
-  background: url("../img/bg-hello.jpg");
+  background: url("../img/landing-bg.jpg");
   background-size: cover;
   padding: 20% 1%; }
 

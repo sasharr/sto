@@ -29,7 +29,7 @@ $(window).on('load', function () {
     });//smoth scroll
 
     $(".popup").on("click touch", function() {
-        event.preventDefault();
+        // event.preventDefault();
         $('.popup-form').css("display", "block")
     });
 
