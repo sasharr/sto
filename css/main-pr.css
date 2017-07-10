@@ -228,19 +228,18 @@ main {
 .popup {
   display: block;
   width: 230px;
-  padding: 1%;
-  margin: 1%;
+  padding: 10px;
   color: white;
   font-family: "Comfortaa", sans-serif;
   font-size: 20px;
   font-weight: 400;
   background: #f7584c;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform:translateX(70px) translateY(-50%) rotate(90deg);
+  transform: translateX(70px) translateY(-50%) rotate(90deg);
   position: fixed;
   top: 50%;
   opacity: 0.8;
-  left: 88%;
+  right: 0;
   text-align: center;
   -webkit-transition: 1s;
   transition: 1s;
@@ -257,7 +256,6 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 15%;
   z-index: 105;
   background: url("../img/form-bg.png");
   background-size: cover;
@@ -281,6 +279,10 @@ main {
     opacity: 0.7; }
 
 .hello-form {
+  position: relative;
+  top: 50%;
+  -webkit-transform:translateY(-50%);
+  transform: translateY(-50%);
   min-width: 200px;
   max-width: 600px;
   margin: 0 auto;
@@ -351,31 +353,31 @@ button.modal_close span:after {
 
 @media screen and (min-width: 1450px) {
   .popup {
-    left: 88%; } }
-@media screen and (max-width: 1367px) {
-  .popup {
-    left: 87%; } }
-@media screen and (max-width: 1025px) {
-  .popup {
-    left: 84%; } }
-@media screen and (max-width: 768px) {
-  .popup {
-    left: 79%; } }
+    transform: translateX(0) rotate(90deg)} }
+/*@media screen and (max-width: 1367px) {*/
+  /*.popup {*/
+    /*left: 87%; } }*/
+/*@media screen and (max-width: 1025px) {*/
+  /*.popup {*/
+    /*left: 84%; } }*/
+/*@media screen and (max-width: 768px) {*/
+  /*.popup {*/
+    /*left: 79%; } }*/
 @media only screen and (max-device-width: 800px) and (orientation: landscape) {
   .popup-form {
     padding-top: 5px; } }
-@media screen and (max-width: 668px) {
-  .popup {
-    left: 76%; } }
-@media screen and (max-width: 415px) {
-  .popup {
-    left: 65%; } }
-@media screen and (max-width: 376px) {
-  .popup {
-    left: 62%; } }
-@media screen and (max-width: 360px) {
-  .popup {
-    left: 60%; } }
+/*@media screen and (max-width: 668px) {*/
+  /*.popup {*/
+    /*left: 76%; } }*/
+/*@media screen and (max-width: 415px) {*/
+  /*.popup {*/
+    /*left: 65%; } }*/
+/*@media screen and (max-width: 376px) {*/
+  /*.popup {*/
+    /*left: 62%; } }*/
+/*@media screen and (max-width: 360px) {*/
+  /*.popup {*/
+    /*left: 60%; } }*/
 .about {
   padding: 5% 0;
   background: white; }

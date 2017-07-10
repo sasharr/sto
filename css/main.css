@@ -327,28 +327,28 @@ button.modal_close span:after {
 
 @media screen and (min-width: 1450px) {
   .popup {
-    left: 88%; } }
+    left: 86%; } }
 @media screen and (max-width: 1367px) {
   .popup {
-    left: 87%; } }
+    left: 85%; } }
 @media screen and (max-width: 1025px) {
   .popup {
-    left: 84%; } }
+    left: 82%; } }
 @media screen and (max-width: 768px) {
   .popup {
-    left: 79%; } }
+    left: 77%; } }
 @media only screen and (max-device-width: 800px) and (orientation: landscape) {
   .popup-form {
     padding-top: 5px; } }
 @media screen and (max-width: 668px) {
   .popup {
-    left: 76%; } }
+    left: 74%; } }
 @media screen and (max-width: 415px) {
   .popup {
-    left: 65%; } }
+    left: 62%; } }
 @media screen and (max-width: 376px) {
   .popup {
-    left: 62%; } }
+    left: 60%; } }
 @media screen and (max-width: 360px) {
   .popup {
     left: 60%; } }
